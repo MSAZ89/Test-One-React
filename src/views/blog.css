@@ -1,0 +1,97 @@
+.blog-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.blog-hero {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  max-width: 75%;
+  align-self: center;
+  min-height: 80vh;
+  align-items: center;
+  border-color: #f5f5f5;
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: linear-gradient(90deg, rgb(255, 255, 255) 39.00%,rgb(231, 243, 255) 100.00%);
+}
+.blog-image {
+  width: 524px;
+  object-fit: cover;
+}
+.blog-container1 {
+  width: 100%;
+  display: flex;
+  margin-left: var(--dl-space-space-twounits);
+  flex-direction: column;
+}
+.blog-text {
+  font-size: 3rem;
+}
+.blog-text5 {
+  margin-top: var(--dl-space-space-unit);
+  font-weight: 600;
+  margin-bottom: var(--dl-space-space-unit);
+}
+@media(max-width: 1200px) {
+  .blog-hero {
+    background-image: linear-gradient(90deg, rgb(255, 255, 255) 39.00%,rgb(231, 243, 255) 100.00%);
+  }
+}
+@media(max-width: 991px) {
+  .blog-hero {
+    padding: var(--dl-space-space-threeunits);
+    flex-direction: column;
+  }
+  .blog-image {
+    order: 2;
+  }
+  .blog-container1 {
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-twounits);
+  }
+  .blog-text {
+    text-align: center;
+  }
+  .blog-text1 {
+    text-align: center;
+  }
+  .blog-text2 {
+    text-align: center;
+  }
+  .blog-text3 {
+    text-align: center;
+  }
+  .blog-text5 {
+    text-align: center;
+    font-weight: 600;
+  }
+}
+@media(max-width: 767px) {
+  .blog-hero {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .blog-image {
+    width: 80%;
+  }
+}
+@media(max-width: 450px) {
+  .blog-hero {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .blog-container1 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}

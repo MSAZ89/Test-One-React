@@ -1,0 +1,41 @@
+.commercial-roofing-feature-card {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  position: relative;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.commercial-roofing-icon {
+  fill: var(--dl-color-gray-500);
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  margin-right: var(--dl-space-space-oneandhalfunits);
+}
+.commercial-roofing-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.commercial-roofing-text {
+  font-weight: 600;
+  margin-bottom: var(--dl-space-space-unit);
+}
+
+
+@media(max-width: 767px) {
+  .commercial-roofing-feature-card {
+    flex-direction: row;
+  }
+  .commercial-roofing-container {
+    flex-direction: column;
+  }
+}
+@media(max-width: 450px) {
+  .commercial-roofing-container {
+    flex-direction: column;
+  }
+}

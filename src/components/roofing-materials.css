@@ -1,0 +1,41 @@
+.roofing-materials-feature-card {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  position: relative;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.roofing-materials-icon {
+  fill: var(--dl-color-gray-500);
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  margin-right: var(--dl-space-space-oneandhalfunits);
+}
+.roofing-materials-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.roofing-materials-text {
+  font-weight: 600;
+  margin-bottom: var(--dl-space-space-unit);
+}
+
+
+@media(max-width: 767px) {
+  .roofing-materials-feature-card {
+    flex-direction: row;
+  }
+  .roofing-materials-container {
+    flex-direction: column;
+  }
+}
+@media(max-width: 450px) {
+  .roofing-materials-container {
+    flex-direction: column;
+  }
+}
